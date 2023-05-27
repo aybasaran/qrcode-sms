@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input {
+  @apply bg-gray-200 border-2 border-gray-200 rounded-lg py-1 px-3 block w-full appearance-none leading-normal;
+}
+
+textarea {
+  @apply bg-gray-200 border-2 border-gray-200 rounded-lg py-1 px-3 block w-full appearance-none leading-normal;
+}
+
+.inputGroup {
+  @apply flex flex-col;
+}
