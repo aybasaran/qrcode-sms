@@ -9,12 +9,13 @@ import cors from "cors";
 const app = Express();
 
 const PORT = config.get("PORT") as number;
+const CLIENT_URL = config.get("clientUrl") as string;
 
 app.use(Express.json());
 app.use(Express.urlencoded({ extended: true }));
 app.use(
   cors({
-    origin: "http://localhost:5174",
+    origin: CLIENT_URL,
   })
 );
 

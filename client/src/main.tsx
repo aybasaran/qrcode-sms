@@ -12,6 +12,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import RegisterPhonePage from "./pages/registerPhone";
 import SendMessagePage from "./pages/sendMessage";
 import ShowQrPage from "./pages/showQr";
+import NotFoundPage from "./pages/404";
 
 const queryClient = new QueryClient();
 
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
   {
     path: "*",
     element: <div>404</div>,
+  },
+  {
+    path: "/404",
+    element: <NotFoundPage />,
   },
 ]);
 
